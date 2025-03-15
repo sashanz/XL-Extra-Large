@@ -1,0 +1,111 @@
+-- Made by TrashScripterF
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "😍XL→Extra Large😍",
+    Text = "Join my discord for more scripts: https://discord.gg/AF9cQDWW",
+    Duration = 5,
+})
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/jensonhirst/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "😜XL→Extra Large😜", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+OrionLib:MakeNotification({
+    Name = "Title!",
+    Content = "🧨XL→Extra Large🧨",
+    Image = "rbxassetid://4483345998",
+    Time = 5
+})
+local Tab = Window:MakeTab({
+    Name = "War Tycoon",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+    Name = ""
+})
+local Section = Tab:AddSection({
+Tab:AddButton({
+    Name = "esp",
+    Callback = function()
+            loadstring(game:HttpGet("https://pastebin.com/raw/TX24dPj9", true))()
+    end    
+})
+Tab:AddButton({
+    Name = "CHAMS",
+    Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/sashanz/CHAMS/refs/heads/main/chams"))()
+    end    
+})
+Tab:AddButton({
+    Name = "FOV",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/sashanz/ezz/refs/heads/main/ezz.lua"))()
+    end    
+})
+Tab:AddBind({
+    Name = "Bind | fly",
+    Default = Enum.KeyCode.E,
+    Hold = false,
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/sashanz/fly-flye.lua/refs/heads/main/fly%20fly.lua", true))()
+    end    
+})
+Tab:AddButton({
+    Name = "HITBOX",
+    Callback = function()
+            _G.HeadSize = 15
+  _G.Disabled = true
+  game:GetService('RunService').RenderStepped:connect(function()
+ if _G.Disabled then
+  for i,v in next, game:GetService('Players'):GetPlayers() do
+  if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+  pcall(function()
+  v.Character.Head.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)  v.Character.Head.Transparency = 1
+  v.Character.Head.BrickColor = BrickColor.new("Red")
+ v.Character.Head.Material = "Neon"
+ v.Character.Head.CanCollide = false
+  v.Character.Head.Massless = true
+ end)
+  end
+  end
+  end
+ end)
+    end    
+})
+local Tab = Window:MakeTab({
+    Name = "Counter Blox",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+local Section = Tab:AddSection({
+    Name = ""
+})
+Tab:AddButton({
+    Name = "esp",
+    Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/sashanz/esp-lua/refs/heads/main/wadawdawdawdawda", true))()
+    end    
+})
+Tab:AddButton({
+    Name = "CHAMS",
+    Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/sashanz/chams-/refs/heads/main/hay%20hay"))()
+    end    
+})
+Tab:AddButton({
+    Name = "FOV",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/sashanz/ezz/refs/heads/main/ezz.lua"))()
+    end    
+})
+Tab:AddButton({
+    Name = "SILENT",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/sashanz/dwdadaw/refs/heads/main/wdawdw"))()
+    end    
+})
+Tab:AddBind({
+    Name = "Bind | fly",
+    Default = Enum.KeyCode.E,
+    Hold = false,
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/sashanz/fly-flye.lua/refs/heads/main/fly%20fly.lua", true))()
+    end    
+})
